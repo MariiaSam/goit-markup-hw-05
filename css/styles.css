@@ -166,8 +166,7 @@ color: var(--focus-nav-color);
 
 .studio-link{
 position: relative;
-color: var(--focus-nav-color);
-}
+width: 48px;}
 
 .studio-link::after{
 content: '';
@@ -177,12 +176,13 @@ display: block;
 left: 0;
 bottom: -1px;
 
+width: 100%;
 height: 4px;
 background-color: var(--focus-nav-color) ;
-border-radius: 2px;
+
 }
 
-/*.portf-link{
+.portf-link{
 position: relative;
 width: 66px;}
 
@@ -197,7 +197,7 @@ width: 66px;}
   width: 100%;
   height: 4px;
   background-color:var(--focus-nav-color);
- }*/
+ }
 
 
 .address {
@@ -530,6 +530,7 @@ Customers*/
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
 
 .customers-link:hover .icon-section-four,
 .customers-link:focus .icon-section-four {
