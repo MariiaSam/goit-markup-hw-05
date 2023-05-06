@@ -687,8 +687,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
   background-color: var(--iris-bgc-btn);
 
 }
-.row-item:hover .text-overlay,
-.row-item:focus .text-overlay{
+.row-link:hover .text-overlay,
+.row-link:focus .text-overlay{
   transform: translateY(0%);
 }
 
