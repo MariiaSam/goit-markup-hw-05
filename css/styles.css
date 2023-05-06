@@ -166,7 +166,8 @@ color: var(--focus-nav-color);
 
 .studio-link{
 position: relative;
-width: 48px;}
+color: var(--focus-nav-color);
+}
 
 .studio-link::after{
 content: '';
@@ -176,13 +177,12 @@ display: block;
 left: 0;
 bottom: -1px;
 
-width: 100%;
 height: 4px;
 background-color: var(--focus-nav-color) ;
-
+border-radius: 2px;
 }
 
-.portf-link{
+/*.portf-link{
 position: relative;
 width: 66px;}
 
@@ -197,7 +197,7 @@ width: 66px;}
   width: 100%;
   height: 4px;
   background-color:var(--focus-nav-color);
- }
+ }*/
 
 
 .address {
