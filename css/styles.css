@@ -173,7 +173,6 @@ color: var(--focus-nav-color);
 
 .studio-link{
 position: relative;
-/*width: 48px;*/
 color: var(--focus-nav-color);
 }
 
@@ -183,27 +182,12 @@ position: absolute;
 display: block;
 left: 0;
 bottom: -1px;
-/*width: 100%;*/
 height: 4px;
+width: 48px;
 background-color: var(--focus-nav-color) ;
 border-radius: 2px;
 }
 
-/*
-.portf-link{
-position: relative;
-width: 66px;
-}
-
-.portf-link::after{
-  content: '';
-  position: absolute;
-  border-radius: 2px;
-  bottom: -1px;
-  display: block;
-  width: 100%;
-  background-color:var(--focus-nav-color);
-}*/
 
 .address {
  display: flex;
@@ -495,15 +479,15 @@ Customers*/
   width: 100%;
   height: 100%;
 
-  border: 1px solid #8e8f99;
+  border-color: 1px solid #8e8f99;
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
 .customers-link:focus {
   color: var(--ocean-bgc-btnfocus);
-  border: 1px solid var(--ocean-bgc-btnfocus);
+  border-color: 1px solid var(--ocean-bgc-btnfocus);
 }
 
 .icon-section-four {
@@ -628,7 +612,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
   border: 1px solid var(--portf-bordercolor);
   cursor: pointer;
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-btn:hover,
@@ -744,8 +728,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  opacity: 1;
-  transition:  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {  
   opacity: 0; 
@@ -763,7 +746,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
   left: 50%; 
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  height: 584px;
+  height: 576px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -781,13 +764,16 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
   width: 24px;
   height: 24px;
   border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus{
   background-color: var(--ocean-bgc-btnfocus);
+  border: none;
 }
 
 .modal-close-icon {
